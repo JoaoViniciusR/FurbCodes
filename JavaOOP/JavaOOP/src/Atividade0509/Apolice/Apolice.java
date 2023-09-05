@@ -1,4 +1,4 @@
-package Atividade0509;
+package Atividade0509.Apolice;
 
 public class Apolice {
     private String name;
