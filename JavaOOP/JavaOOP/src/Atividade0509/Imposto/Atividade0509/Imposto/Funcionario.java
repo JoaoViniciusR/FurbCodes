@@ -32,24 +32,20 @@ public class Funcionario {
 
     public double calcularIrpf() {
         if(getSalario() <= 1903.98) {
-            return getSalario();
         }
         else if (getSalario() >= 1903.99 && getSalario() <= 2826.65) {
             setSalario(getSalario() - ((getSalario() - 1903.98) * 0.075));
-            return getSalario();
         }
         else if (getSalario() >= 2826.66 && getSalario() <= 3751.05) {
             setSalario(getSalario() - (((getSalario() - 2826.65) * 0.15) + ((2826.65 - 1903.99) * 0.075)));
-            return getSalario();
         }
         else if (getSalario() >= 3751.06 && getSalario() <= 4664.68) {
             setSalario(getSalario() - (((getSalario() - 3751.05) * 0.225)+ ((2826.65 - 1903.99) * 0.075) + ((3751.05 - 2826.66) * 0.15)));
-            return getSalario();
         }
         else if (getSalario() >= 4664.69) {
-            
+            setSalario((getSalario() - 4664.69) * 0.275 + (4664.68 - 3751.06) * 0.225 + (3751.05 - 2826.66) * 0.15 + (2826.65 - 1903.99) * 0.075);
         }
-        return 0;
+        return getSalario();
     }
     
 }
