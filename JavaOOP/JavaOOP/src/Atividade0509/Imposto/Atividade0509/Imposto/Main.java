@@ -3,7 +3,7 @@ package Atividade0509.Imposto;
 import java.util.Scanner;
 
 public class Main {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         Funcionario[] funcionarios = new Funcionario[5];
@@ -14,13 +14,13 @@ public class Main {
 
             System.out.print("Digite o salário do funcionário " + (i + 1) + ": ");
             double salario = scanner.nextDouble();
-            scanner.nextLine();
+            scanner.nextLine(); // Consumir a quebra de linha
 
             funcionarios[i] = new Funcionario(nome, salario);
         }
 
         for (Funcionario funcionario : funcionarios) {
-            System.out.println(funcionario.toString());
+            System.out.println(funcionario.imprimir());
             System.out.println();
         }
 
@@ -35,7 +35,7 @@ public class Main {
 
         for (Funcionario funcionario : funcionarios) {
             if (funcionario.calcularIrpf() == maxIRPF) {
-                System.out.println(funcionario.toString());
+                System.out.println(funcionario.imprimir());
             }
         }
 
