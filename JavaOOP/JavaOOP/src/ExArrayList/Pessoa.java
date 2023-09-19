@@ -21,6 +21,9 @@ public class Pessoa {
     }
 
     public void setName(String name) {
+        if (name.trim().isEmpty()) {
+            throw new IllegalArgumentException("name must not be empty");
+        }
         this.name = name;
     }
 
@@ -29,6 +32,11 @@ public class Pessoa {
     }
 
     public void setEnderecos(ArrayList<Endereco> enderecos) {
+        
+        if (enderecos != null) {
+            throw new IllegalArgumentException("endereços must not be null");
+        }
+        
         this.enderecos = enderecos;
     }
 
