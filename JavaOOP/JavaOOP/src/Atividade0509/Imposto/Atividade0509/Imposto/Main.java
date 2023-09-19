@@ -14,7 +14,7 @@ public class Main {
 
             System.out.print("Digite o salário do funcionário " + (i + 1) + ": ");
             double salario = scanner.nextDouble();
-            scanner.nextLine(); // Consumir a quebra de linha
+            scanner.nextLine(); 
 
             funcionarios[i] = new Funcionario(nome, salario);
         }
