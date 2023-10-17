@@ -3,7 +3,7 @@ package ExArrayList;
 import java.util.ArrayList;
 
 public class Pessoa {
-        
+    
     private String name;
     private ArrayList<Endereco> enderecos;
     

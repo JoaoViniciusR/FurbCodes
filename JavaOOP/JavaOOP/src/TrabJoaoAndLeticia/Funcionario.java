@@ -21,7 +21,6 @@ g) Um método que possa imprimir a folha de pagamento informando o nome dos func
 respectivos salários em ordem crescente de salário. 
 Dica: É necessário criar um outro vetor que conterá o vetor original e posteriormente ordená-lo.  */
 
-
 public class Funcionario {
     
     private int matricula; 

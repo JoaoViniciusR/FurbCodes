@@ -9,11 +9,11 @@ public class TestePessoa {
         
         ArrayList<Endereco> enderecoList = new ArrayList<Endereco>();
         
-        // Endereco endereco = new Endereco("tabacus", "casa", 420);
-        // Endereco endereco2 = new Endereco("tabacusCristus", "casa", 69);
+        Endereco endereco = new Endereco("tabacus", "casa", 420);
+        Endereco endereco2 = new Endereco("tabacusCristus", "casa", 69);
         
-        // enderecoList.add(endereco);
-        // enderecoList.add(endereco2);
+        enderecoList.add(endereco);
+        enderecoList.add(endereco2);
         pessoa.setEnderecos(enderecoList);
         
         // System.out.println(pessoa.imprimirEndereco());
